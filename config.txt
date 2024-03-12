@@ -2,17 +2,17 @@ python -m pip install --upgrade pip
 pip install django
 pip install pillow
 git init
-git config --global user.name "wizedev"
-git config --global user.email "wizedev"
-git remote add aula https://github.com/"perfil"/Aula-POO-Django.git
-git branch -M main
+git config --global user.name "username-github"
+git config --global user.email "username-github"
+git remote add <nomeconexao> https://github.com/"username-github"/Aula-POO-Django.git
+git branch -M <branch e.g main>
 
 git config --global http.proxy 10.1.3.1:4239 #apenas no Lab.
-git pull aula main
+git pull <nomeconexao> main
 
 git add .
-git commit -m "Projeto Update"
-git push aula main
+git commit -m "<comentario>"
+git push <nomeconexao> main
 
 pip install python-decouple
 python .\manage.py runserver 80
