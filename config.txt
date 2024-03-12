@@ -1,0 +1,21 @@
+python -m pip install --upgrade pip
+pip install django
+pip install pillow
+git init
+git config --global user.name "wizedev"
+git config --global user.email "wizedev"
+git remote add aula https://github.com/"perfil"/Aula-POO-Django.git
+git branch -M main
+
+git config --global http.proxy 10.1.3.1:4239 #apenas no Lab.
+git pull aula main
+
+git add .
+git commit -m "Projeto Update"
+git push aula main
+
+pip install python-decouple
+python .\manage.py runserver 80
+python .\manage.py makemigrations
+python .\manage.py migrate
+python .\manage.py createsuperuser
