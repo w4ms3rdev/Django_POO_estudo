@@ -3,7 +3,7 @@ pip install django
 pip install pillow
 git init
 git config --global user.name "username-github"
-git config --global user.email "username-github"
+git config --global user.email "email-github"
 git remote add <nomeconexao> https://github.com/"username-github"/Aula-POO-Django.git
 git branch -M <branch e.g main>
 
