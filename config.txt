@@ -12,7 +12,7 @@ git pull <nomeconexao> main
 
 git add .
 git commit -m "<comentario>"
-git push <nomeconexao> main
+git push <nomeconexao> <branch e.g main>
 
 pip install python-decouple
 python .\manage.py runserver 80
